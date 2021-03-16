@@ -1,0 +1,7 @@
+#ji, #aboutNav, #featuredNav, #hi, #adaptable, #introPortrait, #introButton {
+    transition: .7s;
+}
+
+.fadeIn {
+    opacity: 0;
+}

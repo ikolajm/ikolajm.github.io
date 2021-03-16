@@ -1,0 +1,147 @@
+/* About */
+.intro {
+    padding-top: 80px;
+    width: 100vw;
+    height: 100vh;
+    background: var(--blue);
+    display: flex;
+}
+
+.content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+}
+
+.portrait {
+    padding: 1rem;
+    margin-right: 3rem;
+    position: relative;
+    height: 285px;
+}
+
+.imageBackdrop {
+    width: 250px;
+    height: 250px;
+    background: var(--jmi-pink);
+    position: relative;
+    /* border-radius: 5px; */
+    left: -5%;
+    top: -5%;
+    transition: .3s;
+    border-radius: 3px;
+}
+
+.backdropOutline {
+    width: 250px;
+    height: 250px;
+    /* background: var(--jmi-pink); */
+    position: absolute;
+    border: 3px solid var(--jmi-pink);
+    left: 60%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    transition: .3s;
+    border-radius: 3px;
+}
+
+.portrait:hover .imageBackdrop {
+    left: 0%;
+    top: 0%;
+}
+
+.portrait:hover .backdropOutline {
+    left: 55%;
+    top: 55%;
+}
+
+.intro .imageBackdrop img {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.aboutText {
+    padding: 1rem;
+}
+
+.aboutText h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.intro .learnMore {
+    width: 200px;
+    height: 50px;
+    border: 3px solid var(--jmi-pink);
+    color: var(--white);
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+    background: transparent;
+    background: linear-gradient(to right, var(--jmi-pink) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-radius: 3px;
+}
+
+.learnMore::before {
+    content: "";
+    transform: skew(-30deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.learnMore:hover {
+    background-position: left bottom;
+    color: var(--white);
+}
+
+.content i {
+    color: var(--jmi-pink);
+    font-size: 3rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.content i:hover {
+    color: var(--pink-hover);
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform:  translateY(0); }
+    10%  { transform:  translateY(0); }
+    30%  { transform:  translateY(10px); }
+    50%  { transform:  translateY(0); }
+    100% { transform:  translateY(0); }
+}
+
+@media screen and (max-width: 775px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content .portrait {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    .content .aboutText {
+        margin-top: 1rem;
+    }
+}

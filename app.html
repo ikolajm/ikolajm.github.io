@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="featured.css">
+    <link rel="stylesheet" href="fadeClasses.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- Logo -->
+    <link rel="icon" href="">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Jacob Ikola</title>
+</head>
+    <body onload="loadIntro()">
+        <!-- Navigation -->
+        <header>
+            <nav>
+                <!-- Logo -->
+                <a id="ji" class="navLink introLink fadeIn" href="#intro">Jacob Ikola</a>
+                <!-- Links -->
+                <div class="linkContainer">
+                    <a id="aboutNav" href="#about" class="navLink fadeIn">About</a>
+                    <a id="featuredNav" href="#featured" class="navLink fadeIn">Featured</a>
+                </div>
+            </nav>
+        </header>
+        <!-- Intro section -->
+        <section id="intro" class="intro container">
+            <!-- Content -->
+            <div class="content">
+                <!-- Logo -->
+                <div id="introPortrait" class="portrait fadeIn">
+                    <div class="backdropOutline"></div>
+                    <div class="imageBackdrop">
+                        <img src="assets/jake test 2.png" alt="Jake Ikola" />
+                    </div>
+                </div>
+                <div class="aboutText">
+                    <h1 id="hi" class="fadeIn">Hi, I'm Jake!</h1>
+                    <h1 id="adaptable" class="fadeIn">
+                        I am an adaptable, hardworking software developer with a current focus in creating full stack web applications.
+                    </h1>
+                    <button id="introButton" onclick="learnMoreFunction()" class="learnMore fadeIn">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <!-- About section -->
+        <section id="about" class="about container" data-aos="fade-in" data-aos-once="true" data-aos-duration="1500" data-aos-delay="100">
+            <!-- Content -->
+            <div class="content">
+                <div class="aboutText">
+                    <h1>I am a highly adaptable individual who is motivated by learning.</h1>
+                    <h1>
+                        When faced with a problem, I do my best to use all resources available to me in order to fix it. This can include reading articles and documentation, watching videos, or finding a couple free lessons. I’ve grown to embrace the challenges that development can bring. I do my best to keep a positive attitude and treat each obstacle as an opportunity to improve.
+                    </h1>
+                    <h1>In my free time I enjoy playing basketball, skateboarding, and playing my guitar!</h1>
+                </div>
+                <!-- Photo 2 -->
+                <div class="portrait">
+                    <div class="backdropOutline"></div>
+                    <div class="imageBackdrop">
+                        <img src="assets/jake test 3.png" alt="Jake Ikola" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured works -->
+        <section id="featured" class="featured container" data-aos="fade-in" data-aos-once="true" data-aos-duration="1500" data-aos-delay="500">
+            <h1>My Recent Projects</h1>
+            <p>These are a few of my most recent projects. To see everything I work on, <a target="_blank" href="https://github.com/ikolajm">check out my github</a>.</p>
+            <!-- Project section -->
+            <div class="projects">
+                <!-- Tellem -->
+                <div class="project">
+                    <!-- View section -->
+                    <div class="projectView">
+                        <img src="assets/tellem-app-view.png" alt="Application view of project" />
+                        <!-- <div class="projectScreenshot tellem"></div>
+                        <div class="colorOverlay"></div>
+                        <img src="assets/tellem-portfolio-logo.png" alt="Tellem logo" /> -->
+                    </div>
+                    <!-- Description -->
+                    <div class="projectAbout">
+                        <div class="projectHeader">
+                            <div class="linkGroup">
+                                <a target="_blank" href="https://github.com/ikolajm/tellem-client"><i class="fab fa-github"></i></a>
+                                <a target="_blank" href="https://tellem-messenger.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <h1>Tellem</h1>
+                        </div>
+                        <div class="description">
+                            <p>A messaging app to get more comfortable with React hooks and external libraries such as socket.io.</p>
+                            <p>Create a conversation with up to four other users and "tellem" what you're up to!</p>
+                        </div>
+                        <div class="skilltags">
+                            <span class="skilltag">React</span>
+                            <span class="skilltag">PostgreSQL</span>
+                            <span class="skilltag">Node</span>
+                            <span class="skilltag">Socket.io</span>
+                            <span class="skilltag">Heroku</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bumper -->
+            <div class="bumper"></div>
+            <!-- Footer -->
+            <footer>
+                <h1>Want to know more? Let's talk!</h1>
+                <div class="buttonGroup">
+                    <a  target="_blank" href="https://www.linkedin.com/in/jmi/">
+                        <span class="backgroundBorder"></span>
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a  target="_blank" href="mailto:ikolajm@gmail.com">
+                        <span class="backgroundBorder"></span>
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a  target="_blank" href="assets/Developer Resume.pdf">
+                        <span class="backgroundBorder"></span>
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</html>

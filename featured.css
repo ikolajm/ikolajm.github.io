@@ -1,0 +1,132 @@
+.featured {
+    min-height: calc(100vh - (65px));
+    padding: 2rem;
+    margin-top: 1rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured h1 {
+    text-align: center;
+}
+
+.featured p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.featured p a {
+    color: var(--jmi-pink);
+    transition: .3s;
+}
+
+.featured a:hover, .featured a:focus {
+    text-decoration: none !important;
+    color: var(--pink-hover);
+}
+
+.project {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectView {
+    position: relative;
+}
+
+.projectView img {
+    width: 400px;
+    /* height: 100px; */
+}
+
+.projectAbout {
+    max-width: 100%;
+    text-align: left;
+    padding: 1rem;
+    background: var(--blue);
+}
+
+.projectHeader {
+    display: flex;
+    margin-bottom: .5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkGroup {
+
+}
+
+.linkGroup i {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.linkGroup i:hover {
+    color: var(--jmi-pink);
+}
+
+.projectHeader h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0rem;
+}
+
+.projectAbout .description {
+    padding: 1rem;
+    background: var(--darkBlue);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: var(--white-hover);
+}
+
+.projectAbout .description p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.projectAbout .description p:last-of-type {
+    margin-bottom: 0rem;
+}
+
+.skilltags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skilltag {
+    padding: .5rem .75rem;
+    background: var(--white);
+    color: var(--blue);
+    font-size: 1rem;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.bumper {
+    margin-top: 65px;
+}
+
+@media screen and (max-width: 991px) {
+    .project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .skilltags {
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .projectView img {
+        width: 300px;
+    }
+}

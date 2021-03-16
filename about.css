@@ -1,0 +1,63 @@
+.about {
+    width: 100vw;
+    padding: 100px 0px;
+}
+
+.about .aboutText {
+    order: 1;
+    margin-top: 0rem;
+}
+
+.about .portrait {
+    margin-right: 0rem;
+    margin-left: 3rem;
+    order: 2;
+}
+
+.about .backdropOutline {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border: 3px solid var(--jmi-pink);
+    left: 40%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.about .imageBackdrop {
+    bottom: 5%;
+    left: 5%;
+}
+
+.about .imageBackdrop img {
+    width: 150px;
+    background: var(--jmi-pink);
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.about .portrait:hover .backdropOutline {
+    left: 45%;
+    top: 55%;
+}
+
+.about .portrait:hover .imageBackdrop {
+    margin-bottom: 0%;
+    margin-left: 0%;
+}
+
+@media screen and (max-width: 775px) {
+    .about .portrait {
+        margin-right: 0rem;
+        margin-left: 0rem;
+        order: 1;
+    }
+
+    .about .aboutText {
+        order: 2;
+        margin-top: 1rem;
+    }
+}
