@@ -56,23 +56,18 @@
     justify-content: space-between;
 }
 
-.projectHeader div {
+.titleContainer {
     display: flex;
     align-items: center;
 }
 
-.projectHeader div span {
+.projectHeader div .inDevelopment {
     padding: .5rem .75rem;
     background: var(--pink);
     color: var(--white);
     font-size: 1rem;
     border-radius: 3px;
     margin: 5px;
-}
-
-
-.linkGroup {
-
 }
 
 .linkGroup i {
