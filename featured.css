@@ -56,6 +56,21 @@
     justify-content: space-between;
 }
 
+.projectHeader div {
+    display: flex;
+    align-items: center;
+}
+
+.projectHeader div span {
+    padding: .5rem .75rem;
+    background: var(--pink);
+    color: var(--white);
+    font-size: 1rem;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+
 .linkGroup {
 
 }
@@ -116,6 +131,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .howlerAbout {
+        order: 2;
+    }
+
+    .howlerView {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projects {
+        margin-bottom: 10%;
     }
 }
 
